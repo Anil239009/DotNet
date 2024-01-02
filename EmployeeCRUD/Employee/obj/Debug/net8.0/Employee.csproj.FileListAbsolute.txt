@@ -1,0 +1,14 @@
+D:\DotNet\Employee\Employee\bin\Debug\net8.0\Employee.exe
+D:\DotNet\Employee\Employee\bin\Debug\net8.0\Employee.deps.json
+D:\DotNet\Employee\Employee\bin\Debug\net8.0\Employee.runtimeconfig.json
+D:\DotNet\Employee\Employee\bin\Debug\net8.0\Employee.dll
+D:\DotNet\Employee\Employee\bin\Debug\net8.0\Employee.pdb
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\Employee.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\Employee.AssemblyInfoInputs.cache
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\Employee.AssemblyInfo.cs
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\Employee.csproj.CoreCompileInputs.cache
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\Employee.dll
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\refint\Employee.dll
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\Employee.pdb
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\Employee.genruntimeconfig.cache
+D:\DotNet\Employee\Employee\obj\Debug\net8.0\ref\Employee.dll
