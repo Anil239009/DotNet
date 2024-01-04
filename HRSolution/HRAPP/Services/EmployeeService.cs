@@ -14,8 +14,10 @@ public class EmployeeService:IEmployeeService{
        employees=mgr.DeSerialize(fileName);
        return employees;
     }
-    public void GetById(int id){
-
+    public Employee GetById(int id){
+      List<Employee> emp=GetAll();
+     return emp.Find(e=>e.Id==id);
+      
     }
     public void Insert(Employee emp){}
      public void Update(Employee emp){}

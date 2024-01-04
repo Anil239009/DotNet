@@ -11,8 +11,8 @@ public class EmployeesController{
     public List<Employee> GetAll(){
         return this._svc.GetAll();
     }
-    public void GetById(int id){
-        this._svc.GetById(id);
+    public Employee GetById(int id){
+        return this._svc.GetById(id);
     }
 
     public void Insert(Employee emp){
