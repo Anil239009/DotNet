@@ -23,6 +23,6 @@ public class EmployeesController{
     }
 
     public void Delete(int id){
-
+        this._svc.Delete(id);
     }
 }
