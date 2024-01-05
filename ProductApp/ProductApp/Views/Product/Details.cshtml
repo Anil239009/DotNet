@@ -1,0 +1,6 @@
+<h1>Product details by Id </h1>
+
+@{
+    Product product= (Product)ViewData["product"];
+    <h2>@product.Id   @product.Title   @product.Price</h2>
+}

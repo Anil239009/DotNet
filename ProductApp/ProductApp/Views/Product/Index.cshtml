@@ -1,0 +1,11 @@
+@using ProductApp.Models;
+
+<h1>List Of All Products</h1>
+<hr/>
+
+@{
+    List<Product> product=(List<Product>)ViewData["products"];
+        foreach(Product prod in product){
+            <h3>@prod.Id @prod.Title @prod.Price</h3>
+        }
+}
