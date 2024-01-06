@@ -2,7 +2,97 @@
     ViewData["Title"] = "Add Product";
 }
 
-<div class="text-center">
-    <h1>Welcome To eProduct Store</h1>
-    <img src="/images/product.png"/ width="300px" height="300px">
+
+
+<style>
+    input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}
+</style>
+
+<div class="container">
+  <form action="/Product/AddProduct" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="id">Product Id</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Prodid" name="Prodid" placeholder="Your Product Id">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Prodname">Product Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="prodname" name="prodname" placeholder="Your Product name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Prodprice">Product Price</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Prodprice" name="Prodprice" placeholder="Your Product Unit Price..">
+      </div>
+    </div>
+    
+    <br></br>
+
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
 </div>
