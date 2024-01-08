@@ -5,7 +5,7 @@ using ProductApp.Services;
 public class USerController:Controller{
 
     private IProductService _psvc;
-    public ProductController(IProductService psvc){
+    public USerController(IProductService psvc){
         this._psvc=psvc;
     }
     [HttpGet]

@@ -2,15 +2,8 @@
 
 <h1>List Of All Products</h1>
 <hr/>
-<table style="border: 5px;">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Price</th>
-        </tr>
-    </thead>
-    <body>
+
+    @* <body>
         @{
         List<Product> product=(List<Product>)ViewData["products"];
         foreach(Product prod in product){
@@ -19,9 +12,48 @@
                 <td>@prod.Title</td>
                 <td>@prod.Price</td>
             </tr>
+            }
         }
-}
+    </body> *@
+    @* <body>
+
+<h2>Four Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
+  </div>
+</div>*@
+    <body> 
+        @{
+        List<Product> product=(List<Product>)ViewData["products"];
+        foreach(Product prod in product){
+                <div class="card">
+                    <div class="row">
+                    <img src="\images\img_avatar2.png" alt="Denim Jeans" style="width:50% height=50%">
+                    <h1>Product</h1>
+                    <p>Product Title : @prod.Title</p>
+                    <p>Product Price : @prod.Price</p>
+                    <p><button>Add to Cart</button></p>
+                    </div>
+                </div>
+            }
+        }
     </body>
+
 </table>
 
 

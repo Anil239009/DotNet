@@ -3,11 +3,11 @@ using ProductApp.Models;
 namespace ProductApp.Services;
 
 public interface IUserService{
-    public List<Product> GetAll();
+    public List<User> GetAll();
 
-     public Product GetBYId(int id);
+     public User GetBYId(int id);
 
-     public List<Product> AddNewUser(Product prod); 
+     public List<User> AddNewUser(User prod); 
         
     
 }
