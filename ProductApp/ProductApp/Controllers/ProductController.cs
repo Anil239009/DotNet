@@ -33,6 +33,4 @@ public class ProductController:Controller{
         ViewData["products"]=products;
         return View();
     }
-
-    
 }

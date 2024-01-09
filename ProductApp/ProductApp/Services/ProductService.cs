@@ -1,5 +1,6 @@
 
 
+using HRAPP.Repositories.Connected;
 using ProductApp.Models;
 using ProductApp.Repositories;
 namespace ProductApp.Services;
@@ -12,9 +13,10 @@ public class ProductService:IProductService{
         // prod.Add(new Product{Id=1, Title="Pen", Price=20.0f});
         // prod.Add(new Product{Id=2, Title="Book", Price=100.0f});
         // prod.Add(new Product{Id=3, Title="Marker", Price=40.0f});
-        RepositoryManager mgr=new RepositoryManager();
-        string fileName=@"D:\DotNet\DotNet\ProductApp\product.json";
-        prod=mgr.DeSerialize(fileName);
+        ProductDBManager mgr=new ProductDBManager();
+        // string fileName=@"D:\DotNet\DotNet\ProductApp\product.json";
+        // prod=mgr.DeSerialize(fileName);
+        prod = mgr.GetAll();
         return prod;
     }
 
@@ -23,10 +25,12 @@ public class ProductService:IProductService{
         // prod.Add(new Product{Id=1, Title="Pen", Price=20.0f});
         // prod.Add(new Product{Id=2, Title="Book", Price=100.0f});
         // prod.Add(new Product{Id=3, Title="Marker", Price=40.0f});
-        RepositoryManager mgr=new RepositoryManager();
-        string fileName=@"C:\Users\dac\Desktop\vaibhav_anil\DotNet\ProductApp\product.json";
-        prod=mgr.DeSerialize(fileName);
-        Product product=prod.Find(p=>p.Id==id);
+        // RepositoryManager mgr=new RepositoryManager();
+        // string fileName=@"C:\Users\dac\Desktop\vaibhav_anil\DotNet\ProductApp\product.json";
+        // prod=mgr.DeSerialize(fileName);
+        // Product product=prod.Find(p=>p.Id==id);
+        ProductDBManager mgr=new ProductDBManager();
+        Product product=new Product();
         return product;
     }
 

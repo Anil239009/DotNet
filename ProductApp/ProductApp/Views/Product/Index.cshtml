@@ -1,11 +1,26 @@
 @using ProductApp.Models;
 
 <h1>List Of All Products</h1>
-<hr/>
+<hr />
 
 @{
-    List<Product> product=(List<Product>)ViewData["products"];
-        foreach(Product prod in product){
-            <h3>@prod.Id @prod.Title @prod.Price</h3>
-        }
+    List<Product> product = (List<Product>)ViewData["products"];
+
+    <div class="card">
+        <div class="row">
+            @{
+                foreach (Product prod in product)
+                {
+                    <div class="col-sm-4">
+                        <img src="\images\img_avatar2.png" alt="Denim Jeans" style="width:20% height=20%">
+                        <h1>Product</h1>
+                        <p><h2>Product Title : @prod.Title</h2></p>
+                        <p><h2>Product Price : @prod.Price</h2></p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
 }
