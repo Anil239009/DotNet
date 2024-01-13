@@ -52,10 +52,10 @@ public class MySqlDBManager
         //Insert disconnected code to be written
         List<Employee> employees = new List<Employee>();
         MySqlConnection con = new MySqlConnection();
-        con.ConnectionString = @"server=localhost; port=3306; user=root; password=root123; database=iacsd0923";
+        con.ConnectionString = @"server=localhost; port=3306; user=root; password=root123; database=anil";
         MySqlCommand cmd = new MySqlCommand();
         cmd.Connection = con;
-        cmd.CommandText = "SELECT * from employee";
+        cmd.CommandText = "SELECT * from employees";
         try
         {
             DataSet ds = new DataSet();
@@ -71,8 +71,8 @@ public class MySqlDBManager
             emp.Id = int.Parse(theRow["id"].ToString());
             emp.FirstName = theRow["firstName"].ToString();
             emp.LastName = theRow["lastName"].ToString();
-            emp.Address = theRow["email"].ToString();
             emp.Email = theRow["email"].ToString();
+            emp.Address = theRow["address"].ToString();
         }
         catch (Exception e)
         {

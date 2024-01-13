@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\DotNet\\DotNet\\EnterpriseSolution\\Portal\\wwwroot\\images\\Employee.jpg",
+      "PackagePath": "staticwebassets\\images\\Employee.jpg"
+    },
+    {
+      "Id": "D:\\DotNet\\DotNet\\EnterpriseSolution\\Portal\\wwwroot\\images\\Shoplogo.jpg",
+      "PackagePath": "staticwebassets\\images\\Shoplogo.jpg"
+    },
+    {
       "Id": "D:\\DotNet\\DotNet\\EnterpriseSolution\\Portal\\wwwroot\\images\\Transflower.jpg",
       "PackagePath": "staticwebassets\\images\\Transflower.jpg"
+    },
+    {
+      "Id": "D:\\DotNet\\DotNet\\EnterpriseSolution\\Portal\\wwwroot\\images\\img_avatar2.png",
+      "PackagePath": "staticwebassets\\images\\img_avatar2.png"
     },
     {
       "Id": "D:\\DotNet\\DotNet\\EnterpriseSolution\\Portal\\wwwroot\\js\\site.js",

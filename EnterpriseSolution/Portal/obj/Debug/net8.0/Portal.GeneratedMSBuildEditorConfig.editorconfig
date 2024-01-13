@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = d:\DotNet\DotNet\EnterpriseSolution\Portal
 build_property._RazorSourceGeneratorDebug = 
 
+[d:/DotNet/DotNet/EnterpriseSolution/Portal/Views/Employees/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEFkZEVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [d:/DotNet/DotNet/EnterpriseSolution/Portal/Views/Employees/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

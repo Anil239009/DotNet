@@ -1,14 +1,58 @@
 @using BOL;
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 15px 15px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+ 
+}
 
-<h1>Employees List</h1>
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<h1 style="align-items: center;">Employees List</h1>
 <hr/>
-
+<form method="post" asp-controller="Employees" asp-action="Index">
+<button class="button" type="submit" style="align-items: center;">Add new Employee</button>
+</form>
 @{
 //List<Employee> employees=(List<Employee>)ViewData["employees"];
 //List<Employee> employees=ViewBag.empList;
-List<Employee> employees=(List<Employee>)TempData["allEmployees"];
 
-    foreach(Employee emp in employees){
+
+    @* foreach(Employee emp in employees){
         <p>@emp.FirstName @emp.LastName  <a href="/employees/details/@emp.Id">Details</a> | <a href="/employees/edit/@emp.Id">Edit</a> |<a href="/employees/delete/@emp.Id">Delete</a></p>
+    } *@
+
+    <body>
+  @{
+   List<Employee> employees=(List<Employee>)TempData["allEmployees"];
+    foreach (Employee emp in employees)
+    {
+      <div class="card">
+        <div class="col-sm-6">
+          <img src="\images\Employee.jpg" alt="Denim Jeans" width="200px" height="200px">
+          <p>Employee Id : @emp.Id</p>
+          <p>Employee Name : @emp.FirstName @emp.LastName</p>
+          <p>Employee Email : @emp.Email</p>
+          <p>Employee Address : @emp.Address</p>
+          <p><a href="/employees/details/@emp.Id">Details</a> | <a href="/employees/edit/@emp.Id">Edit</a> |<a href="/employees/delete/@emp.Id">Delete</a></p>
+        </div>
+      </div>
     }
+  }
+</body>
 }
