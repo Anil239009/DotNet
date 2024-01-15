@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9yLPaXMRPyvpBYkoKyWMVwEoZX9ANU6D47uiL9jryaU=",
+  "Source": "UserRolesManagement",
+  "BasePath": "_content/UserRolesManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
